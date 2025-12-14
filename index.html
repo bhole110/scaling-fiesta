@@ -8,300 +8,191 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '753644946996334');
+fbq('init', '840249498634864');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=753644946996334&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=840249498634864&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-    <title>@RENOXADS - ADS</title>
-    <meta name="theme-color" content="#060012" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>TG @BHOLENOTOP</title>
+<style>
+  html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden; /* no scroll */
+    background:#000;
+    font-family:'Poppins',sans-serif;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  canvas#bg{
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+  }
 
-    <style>
-        :root {
-            --bg: radial-gradient(circle at top, #180040 0%, #070012 60%, #02000a 100%);
-            --text: #f5f6ff;
-            --text-soft: #b8b9d9;
-            --pink: #ff33c8;
-            --blue: #11c4ff;
-            --green: #4dffa0;
-            --yellow: #ffd53a;
-            --card: rgba(15, 5, 40, 0.92);
-            --radius: 22px;
-        }
+  .container{
+    text-align:center;
+    z-index:2;
+    position:relative;
+    width:100%;
+    max-width:420px;
+    padding:20px;
+    box-sizing:border-box;
+  }
 
-        * {
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
+  .logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    box-shadow:0 0 30px rgba(0,255,255,0.3);
+  }
 
-        body {
-            margin: 0;
-            background: var(--bg);
-            color: var(--text);
-            font-family: "Poppins", sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 18px;
-        }
+  h1{
+    color:#ffe400;
+    margin:12px 0 10px;
+    font-size:clamp(22px,5vw,30px);
+    text-shadow:0 0 12px rgba(255,200,0,0.5), 0 0 30px rgba(255,160,0,0.2);
+  }
 
-        .wrap {
-            width: 100%;
-            max-width: 480px;
-        }
+  p{
+    font-size:clamp(14px,4vw,16px);
+    margin:6px 0;
+    color:#f0f0f0;
+  }
 
-        /* BADGES */
+  .btn{
+    display:inline-block;
+    width:100%;
+    max-width:320px;
+    margin-top:16px;
+    padding:14px 22px;
+    border-radius:40px;
+    font-weight:800;
+    text-decoration:none;
+    text-transform:uppercase;
+    transition:all .3s ease;
+    border:none;
+    outline:none;
+    cursor:pointer;
+  }
 
-        .badges {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 18px;
-        }
+  .join-btn{
+    background:linear-gradient(90deg,#ffbf00,#ff6a00);
+    color:#000;
+    font-size:clamp(14px,4.5vw,16px);
+    box-shadow:0 0 25px rgba(255,150,0,0.6), 0 0 50px rgba(255,100,0,0.3);
+    animation:glowPulse 2s infinite alternate;
+  }
 
-        .badge {
-            background: linear-gradient(135deg, #16002f, #26004f);
-            padding: 12px 18px;
-            border-radius: 999px;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
-        }
+  @keyframes glowPulse{
+    from{box-shadow:0 0 20px rgba(255,160,0,0.4),0 0 40px rgba(255,80,0,0.2);}
+    to{box-shadow:0 0 40px rgba(255,200,0,0.7),0 0 80px rgba(255,100,0,0.4);}
+  }
 
-        .badge .icon {
-            font-size: 18px;
-        }
+  .setup-btn{
+    background:linear-gradient(90deg,#1e9bff,#00c8ff);
+    color:#fff;
+    font-size:clamp(14px,4vw,15px);
+    margin-top:20px;
+    box-shadow:0 0 25px rgba(0,200,255,0.4);
+  }
 
-        .badge span {
-            color: var(--yellow);
-            font-weight: 600;
-        }
+  .timer{
+    margin-top:12px;
+    font-weight:700;
+    font-size:clamp(14px,4vw,15px);
+    color:#ff4747;
+    text-shadow:0 0 8px rgba(255,0,0,0.4);
+  }
 
-        /* HERO */
-
-        .hero {
-            text-align: center;
-            padding: 24px 18px 28px;
-            background: linear-gradient(160deg, #120033, #0a001f);
-            border-radius: 26px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 26px;
-        }
-
-        .pfp {
-            width: 125px;
-            height: 125px;
-            border-radius: 999px;
-            margin: auto;
-            overflow: hidden;
-            box-shadow: 0 0 35px rgba(255, 60, 200, 0.6);
-            border: 4px solid transparent;
-            background: conic-gradient(#ff33c8, #ffd53a, #11c4ff, #4dffa0, #ff33c8);
-            padding: 4px;
-        }
-
-        .pfp img {
-            width: 100%;
-            height: 100%;
-            border-radius: 999px;
-        }
-
-        h1 {
-            margin: 14px 0 4px;
-            font-size: 24px;
-            font-weight: 700;
-            background: linear-gradient(90deg, #c872ff, #11c4ff, #4dffa0);
-            -webkit-background-clip: text;
-            color: transparent;
-            letter-spacing: 0.06em;
-        }
-
-        .sub {
-            color: var(--text-soft);
-            font-size: 14px;
-            max-width: 320px;
-            margin: auto;
-            margin-top: 6px;
-        }
-
-        /* CTA */
-
-        #joinBtn {
-            margin-top: 18px;
-            width: 100%;
-            padding: 14px;
-            font-size: 16px;
-            font-weight: 700;
-            background: linear-gradient(90deg, #11c4ff, #ff33c8);
-            border: none;
-            border-radius: 999px;
-            cursor: pointer;
-            color: #080014;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
-        }
-
-        /* TIMER */
-
-        .timer {
-            background: linear-gradient(180deg, #1a0044, #070014);
-            border-radius: 22px;
-            padding: 18px;
-            text-align: center;
-            margin-top: 10px;
-            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-        }
-
-        .timer-title {
-            color: var(--yellow);
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-        }
-
-        #count {
-            font-size: 34px;
-            color: var(--blue);
-            font-weight: 800;
-            margin-top: 8px;
-        }
-
-        .btm {
-            margin-top: 16px;
-            font-size: 11px;
-            color: var(--text-soft);
-        }
-
-        .btm span {
-            color: var(--green);
-        }
-
-        .footer {
-            margin-top: 16px;
-            text-align: center;
-            font-size: 11px;
-            color: #bfbfe8;
-        }
-
-        .footer span {
-            color: var(--pink);
-            font-weight: 600;
-        }
-
-        .footer a {
-            color: var(--blue);
-            text-decoration: none;
-        }
-    </style>
-
-    
+  .footer{
+    margin-top:20px;
+    font-size:11px;
+    color:rgba(255,255,255,0.5);
+  }
+</style>
 </head>
-
 <body>
-    <div class="wrap">
+<canvas id="bg"></canvas>
+  </style>
+<div class="container">
+  <div class="logo"><img src="https://i.ibb.co/MxJfC4RJ/photo-2025-11-18-10-55-03.jpg" alt="Logo"></div>
+       h1>𝐁𝐃𝐆𝐖𝐈𝐍 𝐗 𝐇𝐀𝐑𝐒𝐇 𝐁𝐇𝐀𝐈</h1>
+  <p>🔥Get Daily Live Sureshot Updates💯</p>
+  <p>💯Join Our Telegram & Never Miss a Chance🔥</p>
 
-        <!-- BADGES -->
-        <div class="badges">
-            <div class="badge">
-                <div class="icon">🎰</div>
-                <div><span>Trusted Channel:</span> High-accuracy gambling signals</div>
-            </div>
+  <button id="joinBtn" class="btn join-btn">🚀 JOIN TELEGRAM NOW</button>
+  <div class="timer">⏳ Offer ends in: <span id="countdown">15</span>s</div>
+  <button id="setupBtn" class="btn join-btn">🚀 JOIN TELEGRAM NOW</button>
 
-            <div class="badge">
-                <div class="icon">🔥</div>
-                <div><span>Daily Live Sureshots:</span> Premium betting entries every day</div>
-            </div>
-        </div>
+  <div class="footer">© 2025 @BHOLENOTOP ADS TG. All rights reserved.</div>
+</div>
 
-        <!-- HERO -->
-        <div class="hero">
-            <div class="pfp">
-                <img src="https://i.ibb.co/vNySF2N/photo-2025-12-09-18-53-41.png" alt="">
-            </div>
+<script>
+// Telegram link
+const TELEGRAM_LINK = "https://t.me/+e-2qAeeehHplZGNl";
+// Countdown + auto redirect
+let timeLeft = 15;
+const countdownEl = document.getElementById('countdown');
+const joinBtn = document.getElementById('joinBtn');
+const setupBtn = document.getElementById('setupBtn');
 
-            <h1>ASHISH TASAHN</h1>
-            <p class="sub">
-                India’s leading gambling signal hub. 🎯 Fast colour-trading signals with tight accuracy. Live entries, safe staking & zero-noise calls for real players.
-            </p>
+const timer = setInterval(()=>{
+  timeLeft--;
+  countdownEl.textContent = timeLeft;
+  if(timeLeft <= 0){
+    clearInterval(timer);
+    window.location.href = TELEGRAM_LINK;
+  }
+},1000);
 
-            <button id="joinBtn">Join Telegram Now</button>
-        </div>
+joinBtn.onclick = ()=>{window.location.href = TELEGRAM_LINK;}
+setupBtn.onclick = ()=>{window.location.href = TELEGRAM_LINK;}
 
-        <!-- TIMER BOX -->
-        <div class="timer">
-            <div class="timer-title">Auto-redirect in</div>
-            <div id="count">20</div>
-            <div class="timer-title" style="font-size:11px;">SECONDS</div>
+// Sci-Fi background animation
+const canvas=document.getElementById('bg');
+const ctx=canvas.getContext('2d');
+let W=canvas.width=window.innerWidth,H=canvas.height=window.innerHeight;
+window.addEventListener('resize',()=>{W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;});
 
-            <div class="btm">
-                Lead fires only after <span>real human</span> detected.
-            </div>
-        </div>
-
-        <div class="footer">
-            © <span>RENOX Ads Agency</span> — High-converting gambling funnels & anti-fake-click systems.<br> Setup: <a href="https://t.me/+lam0t3lJYPRkZTk1" target="_blank">@renoxads</a>
-        </div>
-
-    </div>
-
-    <!-- HUMAN CHECK + LEAD FIRE + REDIRECT -->
-    <script>
-        (function() {
-            const TG = "https://t.me/+lam0t3lJYPRkZTk1";
-
-            let human = false;
-            let countdown = 20;
-            let leadFired = false;
-
-            function fireLead() {
-                if (!leadFired) {
-                    
-                    leadFired = true;
-                }
-            }
-
-            function markHuman() {
-                human = true;
-            }
-
-            ["click", "scroll", "touchstart", "mousemove", "keydown"].forEach(evt =>
-                window.addEventListener(evt, markHuman, {
-                    passive: true
-                })
-            );
-
-            document.getElementById("joinBtn").addEventListener("click", () => {
-                markHuman();
-                fireLead();
-                window.location.href = TG;
-            });
-
-            setInterval(() => {
-                if (countdown <= 0) {
-                    if (human) {
-                        fireLead();
-                        window.location.href = TG;
-                    }
-                    return;
-                }
-                countdown--;
-                document.getElementById("count").textContent = countdown;
-            }, 1000);
-        })();
-    </script>
+const particles=Array(100).fill().map(()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.8,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3}));
+let t=0;
+function draw(){
+  ctx.fillStyle='rgba(0,0,10,0.3)';
+  ctx.fillRect(0,0,W,H);
+  for(const p of particles){
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle='rgba(0,255,255,0.5)';
+    ctx.fill();
+  }
+  ctx.beginPath();
+  for(let x=0;x<W;x+=15){
+    const y=H/2+Math.sin(x*0.01+t*0.05)*15+Math.sin(x*0.02+t*0.03)*10;
+    if(x===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);
+  }
+  ctx.strokeStyle='rgba(0,255,200,0.3)';
+  ctx.lineWidth=2;
+  ctx.stroke();
+  t+=0.5;
+  requestAnimationFrame(draw);
+}
+draw();
+</script>
 </body>
 </html>
